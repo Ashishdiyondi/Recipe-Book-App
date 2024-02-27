@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
 .heading {
   text-align: center;
   background-color: #0c2461;
@@ -58,7 +59,7 @@ li {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 90%;
+    max-width: 97%;
   }
   .recipe-item {
     flex-direction: column;
