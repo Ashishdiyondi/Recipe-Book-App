@@ -34,6 +34,7 @@ function displayRecipes(recipes) {
 }
 
 async function getRecipes() {
+  recipeListEl.innerHTML = `<strong style="color: gray; font-weight: bold;font-size:20px;margin-left:100px">Updating....</strong>`;
   const response = await fetch(
     `https://api.spoonacular.com/recipes/random?number=10&apiKey=${API_KEY}`
   );
@@ -44,7 +45,6 @@ async function getRecipes() {
 async function init() {
   const recipes = await getRecipes();
   displayRecipes(recipes);
-  console.log(recipes);
 }
 
 init();
